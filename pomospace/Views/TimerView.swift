@@ -39,7 +39,7 @@ struct TimerView: View {
                     Button(action: {
                         timerManager.stopToPomo()
                     }) {
-                        Text("Stop")
+                        Text(timerManager.breakTime ? "Skip" : "Stop")
                             .font(.headline)
                     }
                     .buttonStyle(SecondaryBackgroundStyle())
@@ -57,7 +57,7 @@ struct TimerView: View {
                     Button(action: {
                         timerManager.stopToPomo()
                     }) {
-                        Text("Stop")
+                        Text(timerManager.breakTime ? "Skip" : "Stop")
                             .font(.headline)
                     }
                     .buttonStyle(SecondaryBackgroundStyle())

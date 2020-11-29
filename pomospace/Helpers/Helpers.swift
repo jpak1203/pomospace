@@ -8,15 +8,27 @@
 
 import SwiftUI
 
-enum PomoPatterns: String, CaseIterable, Codable, Hashable {
-    case twentyfive = "25-25-25-25"
-    case fifty = "25-25-50"
+enum PomoPatterns: Int {
+    case twentyfive = 15
+    case fifty = 30
+}
+
+enum BreakPatterns: Int {
+    case five = 3
+    case ten = 6
+    case twenty = 12
+    case thirty = 18
 }
 
 enum TimerMode {
     case running
     case paused
     case initial
+}
+
+enum MeditationLength {
+    case fiveMin
+    case tenMin
 }
 
 func secondsToMinutesAndSeconds(seconds: Int) -> String {
@@ -28,11 +40,7 @@ func secondsToMinutesAndSeconds(seconds: Int) -> String {
     return "\(minuteStamp):\(secondStamp)"
 }
 
-enum MeditationLength {
-    case fiveMin
-    case tenMin
-}
-
+// All audio tracks are taken from Creative Commons
 var fiveMinuteMeditation = ["LifeHappens5MinuteBreathing",
                             "MARC5MinuteBreathing",
                             "PadraigBriefMindfulnessPractice",

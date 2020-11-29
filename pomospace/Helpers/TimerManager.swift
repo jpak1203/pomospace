@@ -12,11 +12,13 @@ import UserNotifications
 
 class TimerManager: ObservableObject {
     @Published var timerMode: TimerMode = .initial
-    @Published var pattern: PomoPatterns = .twentyfive
-    @Published var secondsLeft = 1500 //1500 seconds = 25 minutes
+    @Published var pomoPattern: PomoPatterns = .twentyfive
+    @Published var breakPattern: BreakPatterns = .five
+    @Published var secondsLeft = PomoPatterns.twentyfive.rawValue
+    @Published var breakTime: Bool = false
+    
     var timer: Timer = Timer()
     var iterations: Int = 0
-    var breakTime: Bool = false
     let center = UNUserNotificationCenter.current()
     
     init() {
@@ -30,13 +32,16 @@ class TimerManager: ObservableObject {
     }
 
     func start() {
-        print("iteration: " + String(iterations) + " pattern: " + pattern.rawValue)
+        print("iteration: \(iterations) timeLeft: \(secondsToMinutesAndSeconds(seconds: secondsLeft))")
         timerMode = .running
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in
             if self.secondsLeft == 0 {
-                self.checkIterations()
+                self.breakTime.toggle()
                 self.scheduleNotification()
-                if (self.breakTime) { self.stopToBreak() }
+                if (self.breakTime) {
+                    self.iterations+=1
+                    self.stopToBreak()
+                }
                 else { self.stopToPomo()}
             } else {
                 self.secondsLeft-=1
@@ -45,33 +50,24 @@ class TimerManager: ObservableObject {
     }
     
     func stopToPomo() {
-        print("iteration: " + String(iterations) + " pattern: " + pattern.rawValue)
+        print("iteration: \(iterations) timeLeft: \(secondsToMinutesAndSeconds(seconds: secondsLeft))")
         timerMode = .initial
-        if (pattern == .twentyfive) { secondsLeft = 1500 }
-        else if (pattern == .fifty && iterations % 3 == 0) { secondsLeft = 3000 }
-        else { secondsLeft = 15 }
+        breakTime = false
+        secondsLeft = pomoPattern.rawValue
         timer.invalidate()
     }
     
     func stopToBreak() {
-        print("iteration: " + String(iterations) + " pattern: " + pattern.rawValue)
+        print("iteration: \(iterations) timeLeft: \(secondsToMinutesAndSeconds(seconds: secondsLeft))")
         timerMode = .initial
-        if (pattern == .fifty && iterations % 3 == 0) { secondsLeft = 600 }
-        else if (pattern == .twentyfive && iterations % 4 == 0) { secondsLeft = 600 }
-        else { secondsLeft = 300 }
+        secondsLeft = breakPattern.rawValue
         timer.invalidate()
     }
 
     func pause() {
-        print("iteration: " + String(iterations) + " pattern: " + pattern.rawValue)
+        print("iteration: \(iterations) timeLeft: \(secondsToMinutesAndSeconds(seconds: secondsLeft))")
         timerMode = .paused
         timer.invalidate()
-    }
-    
-    private func checkIterations() {
-        iterations+=1
-        if (iterations == 12) { iterations = 0 }
-        breakTime.toggle()
     }
     
     func scheduleNotification() {

@@ -10,24 +10,46 @@ import SwiftUI
 
 struct PomoPatternView: View {
     @ObservedObject var timerManager: TimerManager
-    @Binding var pattern: PomoPatterns
+    @Binding var pomoPattern: PomoPatterns
+    @Binding var breakPattern: BreakPatterns
     
     var body: some View {
         HStack {
-            RadioButtonField(text: "25-25-25-25", isOn: binding(for: .twentyfive))
-            RadioButtonField(text: "25-25-50", isOn: binding(for: .fifty))
+            if timerManager.breakTime {
+                RadioButtonField(text: "5", isOn: bindingBreak(for: .five))
+                RadioButtonField(text: "10", isOn: bindingBreak(for: .ten))
+                RadioButtonField(text: "20", isOn: bindingBreak(for: .twenty))
+                RadioButtonField(text: "30", isOn: bindingBreak(for: .thirty))
+            } else {
+                RadioButtonField(text: "25", isOn: bindingPomo(for: .twentyfive))
+                RadioButtonField(text: "50", isOn: bindingPomo(for: .fifty))
+            }
         }
     }
     
-    private func binding(for pattern: PomoPatterns) -> Binding<Bool> {
+    private func bindingPomo(for pomoPattern: PomoPatterns) -> Binding<Bool> {
         Binding<Bool>(
-            get: { self.pattern == pattern },
+            get: { self.pomoPattern == pomoPattern },
             set: { flag in
                 if flag {
-                    self.pattern = pattern
-                    self.timerManager.pattern = pattern
-                    self.timerManager.iterations = 0
-                    print("iteration: \(timerManager.iterations) pattern: \(pattern.rawValue)")
+                    self.pomoPattern = pomoPattern
+                    self.timerManager.pomoPattern = pomoPattern
+                    self.timerManager.secondsLeft = pomoPattern.rawValue
+                    print("iteration: \(timerManager.iterations) pattern: \(String(pomoPattern.rawValue))")
+                }
+            }
+        )
+    }
+    
+    private func bindingBreak(for breakPattern: BreakPatterns) -> Binding<Bool> {
+        Binding<Bool>(
+            get: { self.breakPattern == breakPattern },
+            set: { flag in
+                if flag {
+                    self.breakPattern = breakPattern
+                    self.timerManager.breakPattern = breakPattern
+                    self.timerManager.secondsLeft = breakPattern.rawValue
+                    print("iteration: \(timerManager.iterations) pattern: \(String(breakPattern.rawValue))")
                 }
             }
         )

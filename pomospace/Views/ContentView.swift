@@ -10,16 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var timerManager = TimerManager()
-    @State var pattern: PomoPatterns = .twentyfive
+    @State var pomoPattern: PomoPatterns = .twentyfive
+    @State var breakPattern: BreakPatterns = .five
     @State var timerMode: TimerMode = .initial
     @State var meditationLength: MeditationLength = .fiveMin
     
     var body: some View {
         VStack {
-            Text("Select a Pattern:")
+            Text(timerManager.breakTime ? "How long do you want to rest:" : "How long do you want to focus for:")
                 .font(.headline)
-            PomoPatternView(timerManager: timerManager, pattern: $pattern)
+                .padding()
+            PomoPatternView(timerManager: timerManager, pomoPattern: $pomoPattern, breakPattern: $breakPattern)
             TimerView(timerManager: timerManager)
+            Text(timerManager.iterations > 0 ? "Your Pomostreak is at: \(timerManager.iterations)" : "")
             Divider()
             MeditationView(meditationLength: $meditationLength)
             
