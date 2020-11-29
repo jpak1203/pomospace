@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED36C0A925717EA700BD7D3C /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36C0A825717EA700BD7D3C /* StatusBarController.swift */; };
+		ED36C0AC257183F400BD7D3C /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36C0AB257183F400BD7D3C /* EventMonitor.swift */; };
+		ED36C0AF2571861100BD7D3C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36C0AE2571861100BD7D3C /* MainViewController.swift */; };
+		ED3D81EC2571957B002E1A68 /* PomoPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D81EB2571957B002E1A68 /* PomoPatternView.swift */; };
+		ED3D81FF2571A397002E1A68 /* RadioButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D81FE2571A397002E1A68 /* RadioButtonField.swift */; };
+		ED3D82062571AE04002E1A68 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D82052571AE04002E1A68 /* Helpers.swift */; };
 		ED6FFD6F25705B50005E58BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FFD6E25705B50005E58BC /* AppDelegate.swift */; };
 		ED6FFD7125705B50005E58BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6FFD7025705B50005E58BC /* ContentView.swift */; };
 		ED6FFD7325705B55005E58BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6FFD7225705B55005E58BC /* Assets.xcassets */; };
 		ED6FFD7625705B55005E58BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6FFD7525705B55005E58BC /* Preview Assets.xcassets */; };
 		ED6FFD7925705B55005E58BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6FFD7725705B55005E58BC /* Main.storyboard */; };
+		ED8BB35F25730F2700CEF9AB /* PadraigTenMinuteMindfulnessOfBreathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB35C25730F2600CEF9AB /* PadraigTenMinuteMindfulnessOfBreathing.mp3 */; };
+		ED8BB36025730F2700CEF9AB /* UCSD10MinuteWisdom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB35D25730F2700CEF9AB /* UCSD10MinuteWisdom.mp3 */; };
+		ED8BB36125730F2700CEF9AB /* FreeMindfulness10MinuteBreathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB35E25730F2700CEF9AB /* FreeMindfulness10MinuteBreathing.mp3 */; };
+		ED8BB36625730F3F00CEF9AB /* StillMind4MinuteBodyScan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB36325730F3D00CEF9AB /* StillMind4MinuteBodyScan.mp3 */; };
+		ED8BB36725730F3F00CEF9AB /* LifeHappens5MinuteBreathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB36425730F3E00CEF9AB /* LifeHappens5MinuteBreathing.mp3 */; };
+		ED8BB36825730F3F00CEF9AB /* MARC5MinuteBreathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB36525730F3F00CEF9AB /* MARC5MinuteBreathing.mp3 */; };
+		ED8BB36F25730F6100CEF9AB /* MARCBreathSoundBodyMeditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB36E25730F6100CEF9AB /* MARCBreathSoundBodyMeditation.mp3 */; };
+		ED8BB37225730F6E00CEF9AB /* VidyamalaTensionRelease.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB37125730F6E00CEF9AB /* VidyamalaTensionRelease.mp3 */; };
+		ED8BB37525730F7A00CEF9AB /* VidyamalaBreathingSpace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB37425730F7A00CEF9AB /* VidyamalaBreathingSpace.mp3 */; };
+		ED8BB37825730F8600CEF9AB /* PadraigBriefMindfulnessPractice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED8BB37725730F8600CEF9AB /* PadraigBriefMindfulnessPractice.mp3 */; };
+		ED9A3ADA2572B1C80020D829 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A3AD92572B1C80020D829 /* TimerView.swift */; };
+		ED9A3ADD2572B3BD0020D829 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A3ADC2572B3BD0020D829 /* TimerManager.swift */; };
+		EDE1532925730CA4002394BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE1532825730CA4002394BC /* AVFoundation.framework */; };
+		EDFF697C2573366F00CD5083 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF697B2573366F00CD5083 /* MeditationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED36C0A825717EA700BD7D3C /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		ED36C0AB257183F400BD7D3C /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		ED36C0AE2571861100BD7D3C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ED3D81EB2571957B002E1A68 /* PomoPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PomoPatternView.swift; path = pomospace/Views/PomoPatternView.swift; sourceTree = SOURCE_ROOT; };
+		ED3D81FE2571A397002E1A68 /* RadioButtonField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonField.swift; sourceTree = "<group>"; };
+		ED3D82052571AE04002E1A68 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = pomospace/Helpers/Helpers.swift; sourceTree = SOURCE_ROOT; };
 		ED6FFD6B25705B50005E58BC /* pomospace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomospace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6FFD6E25705B50005E58BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED6FFD7025705B50005E58BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +49,20 @@
 		ED6FFD7825705B55005E58BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED6FFD7A25705B55005E58BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED6FFD7B25705B55005E58BC /* pomospace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pomospace.entitlements; sourceTree = "<group>"; };
+		ED8BB35C25730F2600CEF9AB /* PadraigTenMinuteMindfulnessOfBreathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PadraigTenMinuteMindfulnessOfBreathing.mp3; sourceTree = "<group>"; };
+		ED8BB35D25730F2700CEF9AB /* UCSD10MinuteWisdom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = UCSD10MinuteWisdom.mp3; sourceTree = "<group>"; };
+		ED8BB35E25730F2700CEF9AB /* FreeMindfulness10MinuteBreathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FreeMindfulness10MinuteBreathing.mp3; sourceTree = "<group>"; };
+		ED8BB36325730F3D00CEF9AB /* StillMind4MinuteBodyScan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StillMind4MinuteBodyScan.mp3; sourceTree = "<group>"; };
+		ED8BB36425730F3E00CEF9AB /* LifeHappens5MinuteBreathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LifeHappens5MinuteBreathing.mp3; sourceTree = "<group>"; };
+		ED8BB36525730F3F00CEF9AB /* MARC5MinuteBreathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MARC5MinuteBreathing.mp3; sourceTree = "<group>"; };
+		ED8BB36E25730F6100CEF9AB /* MARCBreathSoundBodyMeditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MARCBreathSoundBodyMeditation.mp3; sourceTree = "<group>"; };
+		ED8BB37125730F6E00CEF9AB /* VidyamalaTensionRelease.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VidyamalaTensionRelease.mp3; sourceTree = "<group>"; };
+		ED8BB37425730F7A00CEF9AB /* VidyamalaBreathingSpace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VidyamalaBreathingSpace.mp3; sourceTree = "<group>"; };
+		ED8BB37725730F8600CEF9AB /* PadraigBriefMindfulnessPractice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PadraigBriefMindfulnessPractice.mp3; sourceTree = "<group>"; };
+		ED9A3AD92572B1C80020D829 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerView.swift; path = pomospace/Views/TimerView.swift; sourceTree = SOURCE_ROOT; };
+		ED9A3ADC2572B3BD0020D829 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerManager.swift; path = pomospace/Helpers/TimerManager.swift; sourceTree = SOURCE_ROOT; };
+		EDE1532825730CA4002394BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EDFF697B2573366F00CD5083 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +70,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE1532925730CA4002394BC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED36C0B525718A7300BD7D3C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ED9A3ADC2572B3BD0020D829 /* TimerManager.swift */,
+				ED3D82052571AE04002E1A68 /* Helpers.swift */,
+				ED36C0A825717EA700BD7D3C /* StatusBarController.swift */,
+				ED36C0AB257183F400BD7D3C /* EventMonitor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ED36C0B925718A8400BD7D3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D81FE2571A397002E1A68 /* RadioButtonField.swift */,
+				ED6FFD7025705B50005E58BC /* ContentView.swift */,
+				ED3D81EB2571957B002E1A68 /* PomoPatternView.swift */,
+				ED9A3AD92572B1C80020D829 /* TimerView.swift */,
+				EDFF697B2573366F00CD5083 /* MeditationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		ED6FFD6225705B50005E58BC = {
 			isa = PBXGroup;
 			children = (
 				ED6FFD6D25705B50005E58BC /* pomospace */,
 				ED6FFD6C25705B50005E58BC /* Products */,
+				EDE1532725730CA4002394BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +120,16 @@
 		ED6FFD6D25705B50005E58BC /* pomospace */ = {
 			isa = PBXGroup;
 			children = (
+				EDE1532B25730E37002394BC /* Audio */,
+				ED36C0B925718A8400BD7D3C /* Views */,
+				ED36C0B525718A7300BD7D3C /* Helpers */,
 				ED6FFD6E25705B50005E58BC /* AppDelegate.swift */,
-				ED6FFD7025705B50005E58BC /* ContentView.swift */,
 				ED6FFD7225705B55005E58BC /* Assets.xcassets */,
 				ED6FFD7725705B55005E58BC /* Main.storyboard */,
 				ED6FFD7A25705B55005E58BC /* Info.plist */,
 				ED6FFD7B25705B55005E58BC /* pomospace.entitlements */,
 				ED6FFD7425705B55005E58BC /* Preview Content */,
+				ED36C0AE2571861100BD7D3C /* MainViewController.swift */,
 			);
 			path = pomospace;
 			sourceTree = "<group>";
@@ -72,6 +140,47 @@
 				ED6FFD7525705B55005E58BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDE1532725730CA4002394BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1532825730CA4002394BC /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDE1532B25730E37002394BC /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1534825730E91002394BC /* 10Min */,
+				EDE1534725730E87002394BC /* 5Min */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		EDE1534725730E87002394BC /* 5Min */ = {
+			isa = PBXGroup;
+			children = (
+				ED8BB37725730F8600CEF9AB /* PadraigBriefMindfulnessPractice.mp3 */,
+				ED8BB37425730F7A00CEF9AB /* VidyamalaBreathingSpace.mp3 */,
+				ED8BB37125730F6E00CEF9AB /* VidyamalaTensionRelease.mp3 */,
+				ED8BB36425730F3E00CEF9AB /* LifeHappens5MinuteBreathing.mp3 */,
+				ED8BB36525730F3F00CEF9AB /* MARC5MinuteBreathing.mp3 */,
+				ED8BB36325730F3D00CEF9AB /* StillMind4MinuteBodyScan.mp3 */,
+			);
+			path = 5Min;
+			sourceTree = "<group>";
+		};
+		EDE1534825730E91002394BC /* 10Min */ = {
+			isa = PBXGroup;
+			children = (
+				ED8BB36E25730F6100CEF9AB /* MARCBreathSoundBodyMeditation.mp3 */,
+				ED8BB35E25730F2700CEF9AB /* FreeMindfulness10MinuteBreathing.mp3 */,
+				ED8BB35C25730F2600CEF9AB /* PadraigTenMinuteMindfulnessOfBreathing.mp3 */,
+				ED8BB35D25730F2700CEF9AB /* UCSD10MinuteWisdom.mp3 */,
+			);
+			path = 10Min;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,7 +210,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Justin Pak";
 				TargetAttributes = {
 					ED6FFD6A25705B50005E58BC = {
@@ -132,9 +241,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8BB36025730F2700CEF9AB /* UCSD10MinuteWisdom.mp3 in Resources */,
+				ED8BB37525730F7A00CEF9AB /* VidyamalaBreathingSpace.mp3 in Resources */,
+				ED8BB36825730F3F00CEF9AB /* MARC5MinuteBreathing.mp3 in Resources */,
+				ED8BB37225730F6E00CEF9AB /* VidyamalaTensionRelease.mp3 in Resources */,
+				ED8BB36125730F2700CEF9AB /* FreeMindfulness10MinuteBreathing.mp3 in Resources */,
+				ED8BB37825730F8600CEF9AB /* PadraigBriefMindfulnessPractice.mp3 in Resources */,
 				ED6FFD7925705B55005E58BC /* Main.storyboard in Resources */,
 				ED6FFD7625705B55005E58BC /* Preview Assets.xcassets in Resources */,
+				ED8BB36F25730F6100CEF9AB /* MARCBreathSoundBodyMeditation.mp3 in Resources */,
+				ED8BB35F25730F2700CEF9AB /* PadraigTenMinuteMindfulnessOfBreathing.mp3 in Resources */,
 				ED6FFD7325705B55005E58BC /* Assets.xcassets in Resources */,
+				ED8BB36625730F3F00CEF9AB /* StillMind4MinuteBodyScan.mp3 in Resources */,
+				ED8BB36725730F3F00CEF9AB /* LifeHappens5MinuteBreathing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9A3ADA2572B1C80020D829 /* TimerView.swift in Sources */,
+				ED9A3ADD2572B3BD0020D829 /* TimerManager.swift in Sources */,
 				ED6FFD7125705B50005E58BC /* ContentView.swift in Sources */,
+				EDFF697C2573366F00CD5083 /* MeditationView.swift in Sources */,
+				ED36C0A925717EA700BD7D3C /* StatusBarController.swift in Sources */,
 				ED6FFD6F25705B50005E58BC /* AppDelegate.swift in Sources */,
+				ED36C0AC257183F400BD7D3C /* EventMonitor.swift in Sources */,
+				ED3D81FF2571A397002E1A68 /* RadioButtonField.swift in Sources */,
+				ED3D82062571AE04002E1A68 /* Helpers.swift in Sources */,
+				ED3D81EC2571957B002E1A68 /* PomoPatternView.swift in Sources */,
+				ED36C0AF2571861100BD7D3C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +318,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -250,6 +379,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -282,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = pomospace/pomospace.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"pomospace/Preview Content\"";
@@ -305,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = pomospace/pomospace.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"pomospace/Preview Content\"";

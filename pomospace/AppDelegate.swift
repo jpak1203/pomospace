@@ -6,34 +6,32 @@
 //  Copyright © 2020 Justin Pak. All rights reserved.
 //
 
-import Cocoa
+import Cocoa 
 import SwiftUI
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var window: NSWindow!
-
+    var popover = NSPopover.init()
+    var statusBar: StatusBarController?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
-
-        // Create the window and set the content view. 
-        window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-            backing: .buffered, defer: false)
-        window.center()
-        window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
-        window.makeKeyAndOrderFront(nil)
+        
+        // Randomizes meditation tracks everytime you open the app
+        shuffleMeditationTracks()
+        
+        // Set the SwiftUI's ContentView to the Popover's ContentViewController
+        popover.contentViewController = MainViewController()
+        popover.contentSize = NSSize(width: 300, height: 400)
+        popover.contentViewController?.view = NSHostingView(rootView: contentView)
+        
+        statusBar = StatusBarController.init(popover)
     }
-
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
 }
 
